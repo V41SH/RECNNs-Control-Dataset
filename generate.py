@@ -10,8 +10,8 @@ ELLIPSE_AXES = (40, 20)  # Major and minor axis lengths
 OUTPUT_DIR = "/data/ellipse_dataset"
 
 # Create directories
-images_dir = os.path.join(OUTPUT_DIR, "images")
-masks_dir = os.path.join(OUTPUT_DIR, "masks")
+images_dir = os.path.join("data", "images")
+masks_dir = os.path.join("data", "masks")
 os.makedirs(images_dir, exist_ok=True)
 os.makedirs(masks_dir, exist_ok=True)
 
