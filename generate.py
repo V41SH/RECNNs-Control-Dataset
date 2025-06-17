@@ -1,4 +1,3 @@
-# Re-import libraries due to code execution environment reset
 import numpy as np
 import cv2
 import os
@@ -44,7 +43,7 @@ def generate_shape_image(angle_deg, image_size=128, shape="ellipse", axes=(40, 2
     img = cv2.GaussianBlur(mask, (11, 11), 0)
     return img, mask
 
-# Generate datasets for both ellipse and arrow
+
 for shape_type in ["ellipse", "arrow"]:
     img_dir, mask_dir = ensure_dirs(OUTPUT_DIR, shape_type)
     for i, angle in enumerate(ROTATION_ANGLES):
